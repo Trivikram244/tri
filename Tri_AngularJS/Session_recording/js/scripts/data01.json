@@ -1,0 +1,20 @@
+[
+{
+    "type":"Condo",
+    "price":22000,
+    "address":"223 Grove street",
+    "description":"Excellent place, really nice view"
+},
+{
+    "type":"House",
+    "price":410050,
+    "address":"7823 Winding way",
+    "description":"Beautiful home with lots of space for a large family."
+},
+{
+    "type":"Duplex",
+    "price":395000,
+    "address":"837 River lane",
+    "description":"Great Neighbourhood and lot of the green space."
+}
+]

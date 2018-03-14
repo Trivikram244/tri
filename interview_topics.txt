@@ -1,0 +1,25 @@
+HTML new Elements
+HTML 5 APIs
+Inline elements, block elements and examples
+Web storage
+local storage
+canvas / SVG / google map
+
+Advanced topics 
+flex in css
+css position
+box model in css
+media queries
+Aniamtion and transform
+
+Prototype in JS
+objects
+Inhertiance/ Ajax
+
+SPA
+Routing
+$scope, $routScope and isolared scope
+How to acces HTML elements in angularJS
+config and run phase
+dependencies
+$watch, $digest, $apply

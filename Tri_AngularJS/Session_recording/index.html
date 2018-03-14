@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Angular SPA</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    </head>
+    <body ng-app="ngCribs" ng-controller="cribsController">
+
+        <!--Navbar-->
+        <nav class="navbar navbar-default bg-dark">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand text-light"> Session Recording</a>
+                </div>
+            </div>
+        </nav>
+            <div class="container">
+                <button class="btn btn-danger" onclick="start()">Record</button>
+                <a class="btn btn-success" href="pay.html">Play</a>
+        </div>
+        <div class="container-fluid  bg-success  pt-4 p-3" >
+            <div class="container">
+            <form class="row">
+                <div class="col-sm-6">
+                <div class="input-group">
+                    <span class="input-group-text">Min price</span>
+                    <select name="minPrice" id="minPrice" ng-model="priceInfo.min" class="form-control">
+                    <option value="100000">$100,000</option>
+                    <option value="200000">$200,000</option>
+                    <option value="300000">$300,000</option>
+                    <option value="400000">$400,000</option>
+                    <option value="500000">$500,000</option>
+                    <option value="600000">$600,000</option>
+                    <option value="700000">$700,000</option>
+                    <option value="800000">$800,000</option>
+                    <option value="900000">$900,000</option>
+                    <option value="1000000">$1,000,000</option>
+                    </select>
+                    </div>
+                </div>
+                    <div class="col-sm-6 "> <div class="input-group">
+                    <span class="input-group-text">Max price</span>
+                    <select name="maxPrice" id="maxPrice" ng-model="priceInfo.max" class="form-control">
+                    <option value="100000">$100,000</option>
+                    <option value="200000">$200,000</option>
+                    <option value="300000">$300,000</option>
+                    <option value="400000">$400,000</option>
+                    <option value="500000">$500,000</option>
+                    <option value="600000">$600,000</option>
+                    <option value="700000">$700,000</option>
+                    <option value="800000">$800,000</option>
+                    <option value="900000">$900,000</option>
+                    <option value="1000000">$1,000,000</option>
+                    </select>
+                    </div>  </div>
+            </form>
+                </div>
+        </div>
+        <div class="container">
+            <div class="row card-deck">
+         <div ng-repeat="crib in cribs | cribsFilter:priceInfo">
+             <div class="caption col-lg-4">
+             <div class="card mt-5" style="width: 18rem;">
+                    <img class="card-img-top" ng-src="images/{{crib.image}}.jpeg" alt="Card image cap">
+                    <div class="card-body" ng-hide="showDetails === true">
+                        <h5 class="card-title">{{crib.price | currency}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{crib.address}}</h6>
+                        <a  class="card-link">{{crib.type}}</a>
+
+                    </div>
+                 <div class="card-body" ng-show="showDetails == true">
+                     <h6><span class="label label-primary">Beds: {{crib.details.bedrooms}}</span> <span>Baths: {{crib.details.bathrooms}}</span>
+                      <span>SqFt: {{crib.details.area}}</span></h6>
+                     <p class="card-text">{{crib.description}}</p>
+                 </div>
+                    <div class="card-footer">
+
+                        <button class="btn btn-success" ng-hide="showDetails === true" ng-click="showDetails = !showDetails">Go Details</button>
+
+                        <button ng-show="showDetails === true " ng-click="showDetails = !showDetails" class="btn btn-danger"> Close</button>
+                    </div>
+
+                </div>
+                 </div>
+            </div>
+                </div>
+        </div>
+
+<!--        <pre>{{ cribs | json }}</pre>-->
+
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/scripts/cribsController.js"></script>
+        <script src="js/scripts/cribsFactory.js"></script>
+        <script src="js/scripts/cribsFilter.js"></script>
+        <script src="js/cimice.min.js"></script>
+        <script>
+            var rec = new cimice.Recorder({ target: document.documentElement });
+	      rec.on('recording', function(e){
+	        localStorage.setItem('cimice-full', JSON.stringify(rec.getMovie()));
+	      });
+        function start(){
+            return rec.startRecording();
+        }
+
+        </script>
+    </body>
+</html>

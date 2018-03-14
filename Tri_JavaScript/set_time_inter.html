@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+<body>   
+    <div id="myclock">
+        <span id="hours"></span> : <span id="minutes"></span> : <span id="seconds"></span>
+    </div>
+    <script>
+         function clock(){
+             var date = new Date();
+             var hours = date.getHours();
+             var minutes = date.getMinutes();
+             var seconds = date.getSeconds();
+             
+             
+             document.getElementById('hours').innerText = hours;
+             document.getElementById('minutes').innerText = minutes;
+             document.getElementById('seconds').innerText = seconds;
+             
+         };
+        
+        setInterval(clock, 1000);
+//     
+//        setTimeout(function(){
+//            alert("Hello");
+//        }, 1000);
+//        
+//        
+//        var i = 0;
+//       var x = setInterval(function(){
+//        i++
+//           alert("Every 1 seconds i will display");
+//       if(i==2){clearInterval(x);} 
+//       }, 1000)
+        
+        // if you want to get out of this loop, first you need to put this in a variable. create a condtion var i=0; inside the announimas function put the increment and then wite  if( i==5) {clearInterval(x);}
+        
+     </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+{
+  "women":[
+{
+    "title":"Shift Dress Printed ",
+    "price":330,
+    "stars":3,
+    "description":"Excellent place, really nice view",
+    "sizes":["S", "M", "L", "XL"],
+    "image":"fs-01"
+
+},
+{
+
+    "title":"Miss Chase Black Sheath Dress",
+    "price":965,
+    "stars":4,
+    "description":"Beautiful home with lots of space for a large family.",
+    "sizes":["S", "M", "L", "XL"],
+    "image":"fs-02"
+},
+{
+
+    "title":"Tokyo Talkies Women",
+    "price":265,
+    "stars":5,
+    "description":"Great Neighbourhood and lot of the green space.",
+    "sizes":["S", "M", "L", "XL"],
+        "image":"fs-03"
+},
+    {
+
+        "price":1000,
+        "title":"Rainbow Women Navy Blue",
+        "stars":2,
+        "description":"Great Neighbourhood and lot of the green space.",
+        "sizes":["S", "M", "L", "XL"],
+        "image":"fs-02"
+},
+    {
+
+
+        "title":"V-neck Multicolor T-Shirt",
+        "price":345,
+        "stars":1,
+        "description":"Your will love the view",
+        "sizes":["S", "M", "L", "XL"],
+        "image":"fs-03"
+    },
+    {
+
+        "title":"Ethnic Print Fit",
+        "price":950,
+        "stars":3,
+        "description":"best House on the block.",
+        "sizes":["S", "M", "L", "XL"],
+        "image":"fs-04"
+    }
+],
+
+"men":[
+  {
+      "title":"Duke Stardust",
+      "price":330,
+      "stars":3,
+      "description":"Excellent place, really nice view",
+      "sizes":["S", "M", "L", "XL"],
+      "image":"mfs-01"
+
+  },
+  {
+
+      "title":"Difference of Opinion",
+      "price":730,
+      "stars":4,
+      "description":"Beautiful home with lots of space for a large family.",
+      "sizes":["S", "M", "L", "XL"],
+      "image":"mfs-02"
+  },
+  {
+
+      "title":"ESPRIT",
+      "price":965,
+      "stars":5,
+      "description":"Great Neighbourhood and lot of the green space.",
+      "sizes":["S", "M", "L", "XL"],
+          "image":"mfs-03"
+  },
+      {
+
+          "price":1000,
+          "title":"Roadster",
+          "stars":2,
+          "description":"Great Neighbourhood and lot of the green space.",
+          "sizes":["S", "M", "L", "XL"],
+          "image":"mfs-02"
+  },
+      {
+
+
+          "title":"SayItLoud Men",
+          "price":590,
+          "stars":1,
+          "description":"Your will love the view",
+          "sizes":["S", "M", "L", "XL"],
+          "image":"mfs-03"
+      },
+      {
+
+          "title":"V-neck Multicolor T-Shirt",
+          "price":300,
+          "stars":3,
+          "description":"best House on the block.",
+          "sizes":["S", "M", "L", "XL"],
+          "image":"mfs-04"
+      }
+]
+}

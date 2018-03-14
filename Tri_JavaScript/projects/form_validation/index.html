@@ -1,0 +1,200 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    .mt-5 {
+      margin-top: 200px !important;
+      margin-bottom: auto;
+      ;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-xs-3 col-sm-4  col-lg-4"></div>
+      <div class="col-xs-6 col-sm-4 col-lg-4">
+        <form class="card" action="mailto:example@gmail.com" method="get" onsubmit="return validation()">
+          <div class="card-header text-center bg-info text-light">
+            <h2>Register</h2></div>
+          <div class="form-group card-body ">
+            <label>First Name</label>
+            <input type="text" name="firstname" id="firstname" class="form-control" />
+            <p id="invalid_1" class="text-danger"></p>
+
+            <label>Email</label>
+            <input type="email" name="email" id="email" class="form-control" />
+            <p id="invalid_2" class="text-danger"></p>
+
+            <label>Password</label>
+            <input type="password" name="password" id="password" class="form-control" />
+            <p id="invalid_3" class="text-danger"></p>
+            <p id="invalid_4" class="text-danger"></p>
+            <button class="btn btn-primary mt-4">Register</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-3 col-sm-4 col-lg-4"></div>
+    </div>
+
+  </div>
+  <script>
+    var invalid = 0;
+
+    //password Validation variables
+    var i = 0;
+    var j = 0;
+    var k = 0;
+    var length;
+    var compair;
+
+    function validation() {
+
+
+
+
+      //getting the values of fields
+      var firstname = document.getElementById('firstname').value;
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      length = document.getElementById('password').value.length;
+
+      var user = {
+        firstname: firstname,
+        email: email,
+        password: password
+      };
+
+
+      invalid = 0;
+
+
+      // First Name Validation
+      if (firstname == "") {
+        document.getElementById('invalid_1').innerHTML = "You must type in a name";
+        invalid += 1;
+      } else {
+        document.getElementById('invalid_1').innerHTML = "";
+      }
+
+
+
+
+      //Email Validation using the indexOf
+
+      if ((email.indexOf('@')) == -1) {
+        document.getElementById('invalid_2').innerHTML = "Invalid Email";
+        invalid += 1;
+      } else {
+        document.getElementById('invalid_2').innerHTML = "";
+      }
+
+
+
+
+
+
+
+      //Password Check
+      //Outputing the default message if the length is enpty or equal to 0.
+      if ((length == "") || (length == 0)) {
+        document.getElementById('invalid_3').innerHTML = "Password must contain one uppercase and one lower case letter";
+        invalid += 1;
+      }
+
+      //
+      while (i < length) {
+        //we will count the charactes and go thought then bascially change it to both an upercase and lowsercase chcek with the original.
+        // we need to check both to make sure that it has both upercase and lowercase. For hat we need to create loop with in a loop.
+
+        // charAt stand for character at. toUpperCase changes to uppercase
+        compair = document.getElementById('password').value.charAt(i).toUpperCase();
+
+
+        // Here we are compare the values that is changed to uppercase and non upercase
+        if (document.getElementById('password').value.charAt(i) != compair) {
+
+          j = 0;
+          while (j < length) {
+            compair = document.getElementById('password').value.charAt(j).toLowerCase();
+
+            if (document.getElementById('password').value.charAt(j) != compair) {
+
+              document.getElementById('invalid_3').innerHTML = "";
+
+              k = 1;
+
+            } else if ((j == length - 1) && (k == 0)) {
+
+              document.getElementById('invalid_3').innerHTML = "Password must contain one uppercase and one lower case letter";
+              invalid += 1;
+
+            }
+
+            j++
+          }
+
+        } else if ((i == length - 1) && (k == 0)) {
+
+          document.getElementById('invalid_3').innerHTML = "Password must contain one uppercase and one lower case letter";
+          invalid += 1;
+
+        }
+
+        i++;
+      }
+
+
+      // Display the error message if the password length is less than 6.
+      if (length < 6) {
+        document.getElementById('invalid_4').innerHTML = "Password should have more than 6 characters";
+        invalid += 1;
+      } else {
+        document.getElementById('invalid_4').innerHTML = "";
+
+      }
+
+      //Final validation != not equal to zero function need to return true for false
+      if (invalid != 0) {
+        return false;
+      } else {
+
+        console.log(firstname + " " + email + " " + length);
+
+        if (localStorage.getItem('user') === null) {
+
+          var users = [];
+
+          users.push(user);
+
+          localStorage.setItem('users', JSON.stringify(users));
+
+        } else {
+
+          var users = JSON.parse(localStorage.getItem('users'));
+
+          users.push(user);
+
+          localStorage.setItem('users', JSON.stringify(users));
+
+        }
+
+
+        firstname = document.getElementById('firstname').value = "";
+        email = document.getElementById('email').value = "";
+        password = document.getElementById('password').value = "";
+
+
+        return true;
+      }
+
+    }
+  </script>
+</body>
+
+</html>

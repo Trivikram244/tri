@@ -1,0 +1,239 @@
+1. List out HTML5 New Elements and explain the usage.
+header, nav, main, article, section, aside, footer, canvas, video, audio, figure
+
+Difference between semantic and non-semantic elements.
+The tags not having any meaning is called non-semantic and the tags having meaning called semantics. Non-semantic tags div, semantic tag header, footer, nav
+
+  
+What is Specificity in CSS.
+The hiraki of css means where we write the css inline > document > external   
+
+Explain use of !important in css.
+To overcome hiraki order of css writhing position. 
+
+Explain "this" keyword in javascript(complete concept)
+this event in browser defines the tags you selected. 
+
+
+Difference between "==" and "===" in JS with example.
+
+The == operator will compare for equality after doing any necessary type conversions. The === operator will not do the conversion, so if two values are not the same type === will simply return false
+
+
+
+What is angularJS.
+
+It’s a javascript library used to create UI development more easy.
+
+
+
+Difference between AngularJS and VueJS.
+It is view library, with some ecosystem around it. angualrJS you have tp provide a solution to do Ajax calls. 
+
+
+Explain/what SASS in CSS.
+
+SCSS is a nested metalanguage, as valid css is valid css with the same semantics. 
+
+
+What will be the output of variable declared with var keyword and without var keyword 
+inside the function.
+
+
+
+
+Explain Hoisting concept in JS.
+
+Hosting is the javascript interpreter’s action of moving all variable and function declarations to the top of the current scope. 
+
+
+
+
+Javascript Ajax(full concept)
+
+Asynchronous JavaScript And XML. AJAX is not a programming language. AJAX just uses a combination of: A browser built-in XMLHttpRequest object (to request data from a web server); JavaScript and HTML DOM (to display or use the data). 
+
+
+What is preventDefault();?
+
+This method stops the default action of an element from happening. Example Prevents a submit button from submitting a form.
+
+
+What is stopPropagation();?
+
+This method stops the bubbling of an event to prevent element, preventing any parent event handlers form being executed. 
+
+
+How to submit a form using javascript?
+
+From.submit() method to submit from. 
+
+
+What are the type of CSS selectors?
+
+Type selector, descendent, child selected, adjacent elector, universal selector 
+
+
+How to access elements in Javascript?
+
+With the help of document.getElementByTagName(‘tagname’);
+
+
+How to improve performance of webpage/website?
+1. Minimizing HTTP Request
+2. Minifying HTML, CSS, Javascript
+3. Optimizing Images
+4. Sprites
+
+
+Exception handling in javascript with example?
+
+
+
+
+
+
+Difference between onload() and document.ready concept?
+
+
+
+
+What is closure in javascript?
+
+
+Event capturing and event bubbling?
+
+
+Explain addEventListener()?
+
+
+Explain @Keyframe in css.
+
+
+What is Box model.
+
+
+How to use Opacity in css and what are the possible values for opacity.
+
+
+Difference between run and config phase in Angular.
+
+
+
+Explain Gulp​​
+============================
+
+javascript Ajax and what are the properties?!important 
+
+css3 media query and for print media query ?
+
+Minversion vs Developement version and advantages of debugging? 
+
+How to make the better performance of our website? 
+
+Javascript window.onload vs document.ready? 
+
+typeof null 
+
+.typeof undefined 
+no conflict in jQuery? 
+css3 new features? 
+run and config in AngularJS? 
+select drop down on change event? 
+Global variable advantages and disadvantages? 
+where you place the script? 
+if i have a search box and if you type it will filter the result, how will you do? 
+Immedi​ate invoking function(iif) 
+how you make a function as private and public? 
+Javascript closure? 
+css3 flex? 
+javascriptclass? 
+javascriptprototype? 
+what is difference jquery2 and jquery3? 
+backend stuff anything is there(not important)​
+
+============================
+What are the new API's in HTML5? A.:-Geolocation, Drag and drop, web workers, Web storage, SSE. 
+
+What are new elements in HTML5? A.:-Header, footer, nav, section, article, aside, date, etc in CSS: 
+
+What is the preference order in external, internal and inline css? :-First: inline, 
+second: internal, third: external 
+
+Initially i have give color of one element has red and atlast for the same element i have the colour blue. finally what is the color of the element? A.blue. 
+
+Where do we write css or where do we include css files? :-External css file is included in head with, internal css is written in style tag in head. Inline style is written for the 
+
+elements within the style tag inside the element. Javascript: 
+
+Iterate an object in javascript, jQuery and AngularJS. ​ 
+
+In Javascript
+
+for(var key in yourobject) 
+
+{ 
+
+console.log(key,yourobject[key]);
+
+} 
+
+
+
+In jquery
+
+
+
+var obj={ "flammable":"inflammable", "duh":"noduh" }; 
+
+$.each(obj,function(key,value)
+
+{ 
+
+alert(key+":"+value); }
+
+);​
+
+
+
+In AngularJS using ng-repeat in view 
+
+
+
+Vue.js: 
+
+
+
+Differences between Angular.js and Vue.js. 
+What are the three important things in Vue.js :-Template, Style and Script 
+What is DRY in coding language :-Don't repeat yourself means code must be reusable-write less and use multiple times​
+============================
+
+
+    HTML5 
+    Where to place  CSS and JavaScript in an HTML page? 
+    Difference b/w window.onload and document.ready? 
+    How to structure an HTML page ? Using <div> element or elements like <header>,<footer>,<section>,<article> ? 
+    New API's in HTML5? 
+    New elements introduced in HTML5? 
+    How can we store data on client side using HTML5? 
+    
+    CSS3 
+    Role of id, class, inline styling? 
+    Priority of styling in CSS? (id,class,element and inline) 
+    Use of !important in css? 
+    New things introduced in CSS3? 
+
+    JavaScript and JQuery 
+    Event Bubbling and Event Delegation 
+    $.no conflict() 
+    How do we write an event in JQuery? 
+    Difference b/w JQuery and Angular JS 
+    CSS Chaining 
+     Angular JS 
+     Difference b/w Angular.js and Backbone.js 
+     Two way data binding? 
+     Directives and Filter in Angular.js 
+
+     UX 
+     Any experience in UX? Suggest some ways to enhance User Experience 

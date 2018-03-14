@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Bookmark</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+
+	<body onload="fetchBookmarks()">
+        <div class="container">
+            <nav>
+            
+            </nav>
+            <h3 class="text-muted">Bookmark</h3>
+            <hr>
+        </div>
+        
+        <div class="jumbotron container text-center">
+            <h2>Bookmark favorits Sites</h2>
+            <form id="myform">
+                <div class="form-group">
+                    <label>Site Name</label>
+                    <input type="text" class="form-control" id="siteName" placeholder="Website Name"/>
+                </div>
+                <div class="form-group">
+                    <label>Site URL</label>
+                    <input type="text" class="form-control" id="siteURL" placeholder="Website URL"/>
+                </div>
+                <input type="submit" value="Submit" id="submit" class="btn btn-primary">
+            </form>        
+        </div>
+        <div class="row">
+            <div class="col-lg-12 container">
+                <div id="bookmarksResults" class="container"></div>
+            </div>
+        </div>
+        
+        
+        
+        
+       
+         <footer class="text-muted">
+      <div class="container">
+           <hr class="contrainer">
+          @trivikram 2017-2018
+      </div>
+    </footer>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       
+        
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<article class="container" ng-controller="menCtrl">
+  <h2 class="container text-center mt-5">Men</h2>
+  <div class="row mt-5">
+      <div class="col-1 align-bottom"><h5 class="text-center pt-2">Search:</h5></div>
+      <div class="col-5"><input type="text" ng-model="search" class="form-control" placeholder="Product Name"/></div>
+      <div class="col-3"><input type="text" class="form-control" placeholder="Price"/></div>
+      <div class="col-3"><input type="text"  class="form-control" placeholder="Stars"/></div>
+  </div>
+<section class="row mt-5">
+    <div ng-repeat="product in menProducts | orderBy:'title' | filter:search" class=" card-group col-md-4" >
+        <div class="card mt-4">
+        <div class="view overlay"><img ng-src="images/{{product.image}}.jpeg" alt="{product.title}" class="img-fluid"></div>
+        <div class="card-body"><h5 class="card-title">{{product.title}}</h5>
+        <lable>Price: {{product.price|currency: '₹': 0 }}</lable>
+        <lable class="ml-2">Stars: {{product.stars}}</lable>
+        <lable class="ml-2">Size: <span ng-repeat="size in product.sizes"> {{size}} </span>  </lable>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-primary text-light">Details</a>
+        </div>
+      </div>
+    </div>
+</section>
+</article>

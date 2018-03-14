@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <script src="lib/react.development.js"></script>
+        <script src="lib/react-dom.development.js"></script>
+        <script src="lib/babel.min.js"></script>
+        <style>
+            #fancy{
+            background-color:gray;
+            }
+        </style>
+	</head>
+
+	<body>
+        
+        <div id="react-container"></div>
+        
+        <script type="text/babel">
+            
+            class Hello extends React.Component{
+                render() {
+                    return(
+                        <div id="fancy">
+                            <h1>Hello World</h1>
+                        </div>
+                    )
+                }
+            }
+
+ReactDOM.render(
+    <Hello/>,
+    document.getElementById('react-container')
+)
+        </script>
+	</body>
+</html>

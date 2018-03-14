@@ -1,0 +1,146 @@
+ReactJS
+
+Before learning reactJS we need to know the blow course. 
+
+> HMTL CSS
+> JavaScript
+> ES6
+> npm
+
+What is ReactJS
+> Javascript library
+> built at Facebook
+
+
+
+Using React
+> aypal 
+> Airbnb
+> Apple
+> Microsoft
+> Facebook
+
+whats's new in React 16?
+
+> Improved async rendering
+> Return arrays of elements 
+> Better error handling 
+> Smaller file size
+
+
+First we need to install react developer tool in the chrome. This will allow us to find which website is using reactJS and we can look at the componets of page. cmd + Opt + J and se lect the react option  
+
+In our basic react template we have two script files are attached one is reactDOM and other is reactJS
+
+ReactDom responsible for rendering html to our page. 
+
+Add a function ReactDOM.render and pass teo differnt arguments.
+
+ReactDOM.render(
+react.createElement('h1', null, 'Hello World'),
+document.getElementById('react-container')
+)
+
+// In the null place we will pass properties 
+
+
+
+
+
+The above code is very usfull if youare creating one element, what if you want to create bunch of elements like li. It will hard to debug. 
+
+So we incorporate JSX or javaScript as XML is a language extension that allow you to write tags directly in your Javascript.
+
+
+we need to comple the JSX syntax with the help of Babel. Lets incorporate Babel in to Project. 
+
+
+Change the type attribute value to text/babel so that browser can understand the syntax is babel.
+
+
+
+
+One of the most important concept in react is that user interfaces are created by composing components. 
+
+To create a component we are going to use ES6 class components.
+
+since Class is already javascript reserved name i can't use HTML Class attribute insted of that i can use className="".
+
+
+
+
+Creating a stateless components
+
+Our previous compoents, hello,  is just a class that return UI.
+
+
+As stateless function component is the same, except it's a function that returns some UI.
+
+
+
+
+
+
+
+
+Using properties
+
+ When we want to display dynamic data with React,  we can use props. You can think of props as just an ibject, where the key in the object are each of the component properties.
+ 
+ 
+ 
+ 
+ 
+ 
+ Using state
+ 
+ One of the most important React concept is state. When a component's state date changes, the render function will be called again to re-render the changes in state.
+ 
+ 
+ 
+ 
+ Create React App allow you to genereate a React project from scratch with out having to spend a ton of time configuring related tools like WebPack and Babel.
+ 
+ 
+ 1. Install NPM and npm -v to check the version of Node.JS
+ 
+ 
+ 
+ ****sudo npm install -g create-react-app**
+ 
+ If I hit enter and enter may password, this is going to install Create React App so I can run Create React App from any folder on my computer. 
+ 
+ 
+ 
+ Now we can just type create-react-app bulletin-board press enter this is going to install everthing I need.
+ 
+ 
+ Once this is installed we are going to see 
+  
+  -----npm start
+ 
+ ------npm install --save react-icons 
+ 
+ We can icons package from the react
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+
+
+

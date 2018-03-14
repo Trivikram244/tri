@@ -1,0 +1,5 @@
+Variables and datatype
+
+Variable is like a container in which we can store a value in order to use it over and over in our code.
+
+var nameOfVariable = "Value";

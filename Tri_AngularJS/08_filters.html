@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+
+	<body ng-app="">
+        
+        <lable>Your Name</lable>
+        <input type="text" ng-model="name"><br>
+        <p>Welcome {{name | uppercase}}</p>
+       
+       <br>
+       <br>
+        Currency<input type="text" ng-model="price"><br>
+        <p>Welcome {{price | currency:'Rs.':0}}</p>
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <script>
+        
+        </script>
+	</body>
+</html>

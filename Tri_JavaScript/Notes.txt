@@ -1,0 +1,125 @@
+ this keyword
+ 
+ Refers to the owner of the function or any object.
+ 
+
+ Protoypes
+ 
+ setInterval and setTimeout
+ 
+ 
+ setTimeout
+ 
+ It is used to run a loop after a specific time interval.
+ This will run only once.
+ 
+ 
+ setInterval
+ 
+ Is used to run a loop again and angin after  a specific time interval. This is like an infinite loop.
+ 
+ // if you want to get out of this loop, first you need to put interval in a variable. create a condtion *var i=0; inside the announimas function put the increment and then wite  *if( i==5) {clearInterval(x);}
+ 
+ 
+ 
+ Date and Time 
+ 
+ new Date(); this property gives us  the current year, month, date, hours, minutes, seconds and milliseconds. 
+ 
+  To get the individual valus use below peoperties.
+  getFullYear()
+  getMonth()
+  getDate()
+  getHours()
+  getMinutes()
+  getSeconds()
+  getMilliseconds()
+  getTime()
+  
+  
+  
+  
+  
+indexOf  and lastIndexOf 
+
+Methods of string prototype in a perticular string.
+
+
+
+
+Double equal and triple equal
+ 
+ 
+Parsing a string into integer
+
+what is need to parsing a string in to a integer
+this is need because some time when we accept valus form use, we need to validate.
+
+
+BOM ~ DOM
+
+console.dir(window);
+console.dir(document);
+
+
+
+Hosting variable in JavaScript
+
+Means don't move the decloration and variables to the top.
+
+var a = true;
+
+fcuntion change(){
+if(!a){
+var a = 2; 
+}
+alert(a);
+}
+
+change();
+
+
+//var a = true;
+
+//fcuntion change(){
+//var a;
+//if(!a){
+//a = 2; 
+//}
+//alert(a);
+//}
+
+//change();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 

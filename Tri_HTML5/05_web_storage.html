@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>SVG</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <style>
+            svg{
+                background-color: yellow;
+                float: left;
+                margin-left: 20px;
+            }
+            
+        </style>
+	</head>
+
+	<body>
+       <p>Refresh the page to increase number of hits.</p>
+        <script>
+            if(sessionStorage.hits){
+                sessionStorage.hits = Number(sessionStorage.hits)+1;
+            }else{
+                sessionStorage.hits = 0;
+            }
+            
+            document.write("totla hits: " + sessionStorage.hits);
+        </script>
+	</body>
+</html>

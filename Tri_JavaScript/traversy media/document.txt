@@ -1,0 +1,35 @@
+What is Javascript?
+  A Programming language that is used to make web pages interactive
+  Interpreted language
+  Runs on the client computer browser
+  object based
+
+
+Variables
+Arrays
+Loops
+Conditions
+Coparisons& operators
+objects
+functions
+Program flow
+Data Types
+prototypes
+Events
+
+
+HTML VS Javascript
+
+They are completely different and they work together
+HTML is a markup language and Javascript is a Programming language
+Javascript uses 'Events' and 'actions' to make your page interactive
+Learn html first
+
+
+Put content in an html page on the fly
+make webpages responsive
+detect a users browser and other info
+Create Cookies
+Validate Forms
+Create animation, slidesshows, scrolles, etc.
+Building apps with javascript Frameworks (angularjs reactjs Backbonejs,etc)

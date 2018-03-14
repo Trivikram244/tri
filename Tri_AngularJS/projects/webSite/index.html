@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+	
+    </head>
+	<body ng-app="mainApp">
+        
+        <header>
+            <ng-include src="'components/header.html'"></ng-include>
+        </header>
+        
+        <main ng-view></main>
+        <a href="#">Click me</a>
+        
+        <footer>
+            <ng-include src="'components/footer.html'"></ng-include>
+        </footer>
+        <!--JavaScript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <script src="js/angular.js"></script>
+        <script src="js/angular-route.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+<!--        <script src="js/main.js"></script>-->
+        <script>
+            var app = angular.module('mainApp', ['ngRoute']);
+            
+            app.config(function($routeProvider){
+                $routeProvider
+                    .when('/', {
+                    templateUrl:'index.html'
+                    //
+                
+                })
+                    .when('/men', {
+                templateUrl:'men.html '
+                     //
+                
+                })
+                    .otherwise({
+                    redirectTo: '/'
+                })
+            })
+        </script>
+	
+    </body>
+</html>

@@ -1,0 +1,45 @@
+[
+    {
+        "title":'V-neck Multicolor T-Shirt',
+        "price":'330',
+        "stars":'2',
+        "sizes":[{"size":'S'}, {"size":'M'}, {"size":'L'}, {"size":'XL'}],
+        "image":'fs-01'
+    },
+
+    {
+        "title":'Tripr Printed Men V-neck',
+        "price":'730',
+        "stars":'4',
+        "sizes":[{"size":'S'}, {size:'M'}, {size:'L'}, {"size":'XL'}],
+        image:'fs-02'
+    },
+    {
+        "title":'Polo Neck Black',
+        "price":'965',
+        "stars":'5',
+        "sizes":[{"size":'S'}, {"size":'M'}, {"size":'L'}, {"size":'XL'}],
+        "image":'fs-03'
+    },
+    {
+        "title":'Polo Neck Black',
+        "price":'965',
+        "stars":'5',
+        "sizes":[{"size":'S'}, {"size":'M'}, {"size":'L'}, {"size":'XL'}],
+        "image":'fs-04'
+    },
+    {
+        "title":'Polo Neck Black',
+        "price":'965',
+        "stars":'5',
+        "sizes":[{"size":'S'}, {"size":'M'}, {"size":'L'}, {"size":'XL'}],
+        "image":'fs-04'
+    },
+    {
+        "title":'Polo Neck Black',
+        "price":'965',
+        "stars":'5',
+        "sizes":[{"size":'S'}, {"size":'M'}, {"size":'L'}, {"size":'XL'}],
+        "image":'fs-04'
+    }
+]

@@ -1,0 +1,16 @@
+body{
+    font-family: sans-serif;
+}
+
+header{
+    width: 960px;
+    height: 80px;
+    margin: 0 auto;
+}
+.nolist{
+    list-style: none;
+}
+#carousel1{
+  height: 500px!important;
+  background-color: orange;
+}

@@ -1,0 +1,81 @@
+[
+{
+    "id":1,
+    "type":"Condo",
+    "price":22000,
+    "address":"223 Grove street",
+    "description":"Excellent place, really nice view",
+    "details":{
+            "bedrooms":2,
+            "bathrooms":2.5,
+            "area":2121
+        },
+    "image":"cribs-1"
+    
+},
+{
+    "id":2,
+    "type":"House",
+    "price":410050,
+    "address":"7823 Winding way",
+    "description":"Beautiful home with lots of space for a large family.",
+    "details":{
+            "bedrooms":4,
+            "bathrooms":3,
+            "area":2121
+        },
+    "image":"cribs-2"
+},
+{
+    "id":3,
+    "type":"Duplex",
+    "price":395000,
+    "address":"837 River lane",
+    "description":"Great Neighbourhood and lot of the green space.",
+    "details":{
+            "bedrooms":2,
+            "bathrooms":1.5,
+            "area":921
+        },
+        "image":"cribs-3"
+},
+    {
+    "id":4,
+        "type":"House",
+        "price":755590,
+        "address":"7870 forest Avenue",
+        "description":"Great Neighbourhood and lot of the green space.",
+        "details":{
+            "bedrooms":6,
+            "bathrooms":4.5,
+            "area":3230
+        },
+        "image":"cribs-4"
+},
+    {
+    
+        "id":5,
+        "type":"House",
+        "price":345900,
+        "address":"7398 East avene lane",
+        "description":"Your will love the view",
+        "details":{
+            "bedrooms":4,
+            "bathrooms":2.5,
+            "area":1728
+        },
+        "image":"cribs-5"
+    },
+    {
+        "id":6,
+        "type":"Condo",
+        "price":395000,
+        "address":"837 River lane",
+        "description":"best House on the block.",
+        "details":{
+            "bedrooms":2,
+            "bathrooms":1.5,
+            "area":4230},
+        "image":"cribs-6"
+    }
+]

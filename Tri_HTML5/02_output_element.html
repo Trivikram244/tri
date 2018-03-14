@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+	</head>
+
+	<body>
+        <form action="#" method="get" name="myform"  >
+            <p>Enter a value: <input type="text" name="newinput" placeholder="Enter any data"  required="required"/></p>
+            <p><input type="button" value="result" onclick="showResult()"/></p>
+            <output name="result"></output>
+        </form>
+        <script>
+             function showResult() {
+//                 alert("hello");
+            //e.preventDefault();
+             var x=document.forms['myform']["newinput"].value;
+            document.forms['myform']['result'].value = x;
+            }
+        </script>
+	</body>
+</html>

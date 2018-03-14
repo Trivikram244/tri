@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+
+	<body ng-app="app">
+        
+        <p>Controllers are nothing but objects in angulrJS.</p>
+        <div ng-controller="languages">
+        <button class="btn btn-primary" ng-click="php()">PHP</button>
+        <button  class="btn btn-primary" ng-click="javascript()">Javascript</button>
+        <button  class="btn btn-primary" ng-click="cpp()">C++</button>
+        <button  class="btn btn-primary"ng-click="java()">Java</button>
+            <p>You have selected: {{ myFavLan }} </p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <script>
+        
+            var application = angular.module('app', []);
+            application.controller('languages', ['$scope', function($scope){
+                $scope.myFavLan = "None";
+                
+                
+                $scope.php = function(){
+                    $scope.myFavLan = "PHP";
+                }
+                 $scope.javascript = function(){
+                    $scope.myFavLan = "Javascript";
+                }
+                 $scope.cpp = function(){
+                    $scope.myFavLan = "C++";
+                }
+                  $scope.java = function(){
+                    $scope.myFavLan = "Java";
+                }
+            }]);
+        </script>
+	</body>
+</html>

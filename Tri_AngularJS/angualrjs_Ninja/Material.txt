@@ -1,0 +1,151 @@
+AngualrJS
+MVC style javascript framework for creating single page apps.
+Write our code in the easy angualr js wants us to so we can use it fastires in out project
+
+
+
+
+
+
+Features
+2 way binding
+templating
+DOm interaction
+filters
+directives
+many others
+
+
+
+
+
+Single page Apps
+
+AngularJS primarly used to make single page, data-driven applications
+Additional content brought into the web page without the need to refresh
+Use 'view' to achive this
+
+
+
+
+
+MVC overview
+2-way data binding
+filleters directives expressions
+controllers and how to use them
+view and routing
+animations
+form validation
+creating an to do list app
+
+Starting folder https://github.com/iamshaunjp/angular-js-playlist
+
+
+
+MVC Architecture
+
+               Applications
+                /    |    \
+              /      |     \
+             M       V      C
+
+
+Model
+
+--Think of the model as data
+--JSON, database data etc
+
+
+View
+--Used to display content & data to a user in a browser
+--HTML
+--Use expressions to insert data into View
+<html tag> {{data}}</html tag>
+
+
+Controllers
+--Control the functionality of our View
+--Performs the interaction between our model and our View
+--Difference controllers for different areas in our applications.
+
+
+
+User clicks a  show User button in a View
+The usercontroller recognises the button click event and performs a function
+The function communicates with the 'users' model and retrieves all the use data
+The controller passes accessibility to this data to the view, which then display
+it to the end user via expressions.
+
+
+
+Downloading AngualrJS
+
+https://angularjs.org/
+
+Downloading : version 1.X
+Extras later we can download
+
+
+
+--> 2-way data binding[]
+https://www.youtube.com/watch?v=GLdRo9CQVHA&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v&index=4
+
+--> Introduction to directives [3:42]
+https://www.youtube.com/watch?v=Wm1Zj_VLbpk&index=5&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v
+
+>>>https://docs.angularjs.org/api/ng/directive
+
+-->Expressions[6:23]
+https://www.youtube.com/watch?v=xB-OkaRilZo&index=6&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v
+
+--> ng-repeat directives [4:25]
+https://www.youtube.com/watch?v=oRGRpjU_duw&index=7&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v
+
+--> Modules[5:14]
+https://www.youtube.com/watch?v=ybnw5JwBk8g&index=8&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v
+
+--> Controllers[8:54]
+https://www.youtube.com/watch?v=QAUjWaQrY4A&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v&index=9
+
+--> Filters [8:14]
+https://www.youtube.com/watch?v=OCbJ12rJwnE&index=10&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v
+
+--> ng-include directive[8:14]
+https://www.youtube.com/watch?v=S-uYRHtXxgk&index=11&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v
+
+--> ng-show&ng-hide directive [5:19]
+https://www.youtube.com/watch?v=kSSQYgQ6aEY&index=12&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v
+
+--> ng-click directive [11:40]
+https://www.youtube.com/watch?v=e6YjzckfQpg&index=13&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v
+
+--> ng-submit directive [9:17]
+https://www.youtube.com/watch?v=OL8JIQEPSt0&index=14&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v
+
+--> ng-src directives [5:34]
+https://www.youtube.com/watch?v=HR2MuTRuoIE&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v&index=15
+
+--> View and Routes[12:29]
+https://www.youtube.com/watch?v=y7FojM9BTdE&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v&index=16
+
+--> JSON and $http [7:14]
+https://www.youtube.com/watch?v=5SXog1helAY&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v&index=17
+
+--> Custom Directives [17:43]
+
+
+
+
+--> Transclude & Replace [6:27]
+
+--> Animation part-1 [13:32]
+
+--> Animation part-2 [4:53]
+
+--> From validation part-1 [12:27]
+
+-->From validation part-1 [10:06]
+
+--> Location service [6:26]
+
+--> Pretty URL's

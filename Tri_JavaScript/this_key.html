@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+<body>
+
+    <div id="helloworld">Hello world</div>
+    
+    
+    <script>
+        
+        function myObject(){
+            this.x = 100;
+            this.y = 200;
+            this.z = function(){
+              return  this.x * this.y;
+            }
+        }
+        
+        var o = new myObject();
+        
+        console.log(o.x);
+        console.log(o.y);
+        console.log(o.z());
+        
+    </script>
+</body>
+</html>

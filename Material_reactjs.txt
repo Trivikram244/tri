@@ -1,0 +1,170 @@
+ReactJS
+
+
+Next gen javascript
+
+1. Let & conts
+2. Arrow functions
+3. Export and import(modules)
+4. Classes
+5. Classes, properties and methods
+6. Spread & Rest Operators
+7. Destructuring
+
+
+
+Before working with reactJS, learner need to understand the above new concepts of
+JavaScript.
+
+
+
+Introduction
+Library to create User Interfaces
+
+As you can look at the modern websites lots of sections exist, which also be named as components, if you leaned Angualrjs.
+So react takes this components concept and build you website and splitting in to Multiple components an allow to build such components using JavaScript.
+
+Difference
+Reactjs is using to build UI views.
+Angular2 is more than that, it's a framework which allow you to build single page application. It has router supports form validation and so on.
+Its use to controls user experience.
+
+
+
+
+
+-> create-react-app
+
+Easy reactjs environment setup
+
+
+First we need to install the latest version of node.js, even though you don't
+know to use the node.js install it.
+
+ Fter that we open the terminal install the reactjs setup
+
+> Teminal
+  sudo npm install -g create-react-app
+
+> cmd
+npm install -g create-react-app
+
+
+The above command line will install create-react-app globally in your pc.
+It was create by FB to make setup installation easy.
+
+
+
+
+
+Next all you need to do is in the terminal go to the desktop.
+
+> Terminal
+create-react-app   react_basic
+
+It will automatically install all the files required for react app development.
+
+
+https://reactjs.org/docs/add-react-to-a-new-app.html
+
+
+Folder structure
+
+node_module folder consist of all dependancy injectors.
+
+
+Public folder
+  |__ index.html
+
+src folder
+    |__ index.js(where we write js)
+    |__ app.js (body of app)
+
+
+
+> Understand component[9:58]
+
+Most of our react code comprises of components
+
+-> Search bar components
+-> Sign-up component
+->To-do list Component
+  -->List item component
+  -->Add new item (form)component
+
+
+App.js 
+First we need to import our React from react
+Fig-01
+
+
+Now creating component
+Its’ really simple just clear a javascript class with a name camilcase [Header] and we need to extend to component. 
+
+Fig-02
+
+Inside the class ver important method we need to write that is render method.
+Render a React element into the DOM in the supplied container and return a reference to the component
+
+Fig-03
+
+
+
+
+https://www.youtube.com/watch?v=G40iHC-h0c0&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS&index=4&t=0s
+
+
+
+> Understand JSX
+
+
+->Supports XML like syntax inline in javascript
+->Each elements is transformed in to a javascript function call.
+
+https://youtu.be/e0R8EMkC67I
+
+
+
+> Creating Multiple Component
+
+https://youtu.be/9wK4gHoOh1g?list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS
+
+
+
+> Outputting the Dynamic content
+
+https://www.youtube.com/watch?v=1JZEmYwRGoU&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS&index=6
+
+
+> Working with props.
+
+https://www.youtube.com/watch?v=GIU8ekYndKw&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS&index=7
+
+
+
+> Handling events and functions
+
+https://www.youtube.com/watch?v=OcM__8q6p4c&index=8&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS
+
+
+> Understanding and using state
+
+https://youtu.be/e5n9j9n83OM?list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS
+
+
+> How does ReactJS update the DOM?
+---?
+
+> Stateless Components
+
+>Communicating between Parent and Child Component
+
+>Passing Data between Parent and Child Components
+
+>Two-Way-Binding
+
+>Component Lifecycle
+
+>React Router - Route Setup
+
+>React Router - Navigation & Parameters
